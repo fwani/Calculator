@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fwani.calculator.numberCalcActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/num1Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.42"
+                android:text="숫자1" />
+
+            <EditText
+                android:id="@+id/num1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="정수 입력" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/num2Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.42"
+                android:text="숫자2" />
+
+            <EditText
+                android:id="@+id/num2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="정수 입력" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="더하기"
+            android:onClick="addClick"/>
+
+        <Button
+            android:id="@+id/subBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="빼기"
+            android:onClick="subClick"/>
+
+        <Button
+            android:id="@+id/multBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="곱하기"
+            android:onClick="multClick"/>
+
+        <Button
+            android:id="@+id/divBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="나누기"
+            android:onClick="divClick"/>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
